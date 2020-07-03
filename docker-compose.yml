@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_DATABASE: test_db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: rootpassword
+    volumes:
+      - "./sql:/tmp/sql"

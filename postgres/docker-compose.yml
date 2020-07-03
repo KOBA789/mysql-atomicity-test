@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+  db:
+    image: postgres:12
+    environment:
+      POSTGRES_PASSWORD: password
+    volumes:
+      - "./sql:/tmp/sql"
